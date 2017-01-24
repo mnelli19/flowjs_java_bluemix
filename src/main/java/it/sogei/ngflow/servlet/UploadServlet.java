@@ -43,8 +43,13 @@ public class UploadServlet extends HttpServlet {
 	/*
 	 * In ORDER to allow CORS  to multiple domains you can set a list of valid domains here
 	 */
-	private List<String> authorizedUrl = Arrays.asList("http://26.2.234.112",
-			"https://26.2.169.56", "http://localhost", "https://mydomain1.com", "https://mybluemix.net");
+	private List<String> authorizedUrl = Arrays.asList(
+			"http://26.2.234.112",
+			"https://26.2.169.56", 
+			"http://localhost", 
+			"https://mydomain1.com", 
+			"https://upload-flowjs-java.mybluemix.net"
+			);
 
 	protected void doPost(HttpServletRequest request,
 			HttpServletResponse response) throws ServletException, IOException {
