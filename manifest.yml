@@ -3,6 +3,6 @@ applications:
   memory: 512M
   instances: 1
   domain: mybluemix.net
-  name: chunkuploadjava
-  host: chunkuploadjava
+  name: upload-flowjs-java
+  host: upload-flowjs-java
   disk_quota: 1024M

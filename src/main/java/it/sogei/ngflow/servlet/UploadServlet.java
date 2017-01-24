@@ -54,7 +54,7 @@ public class UploadServlet extends HttpServlet {
 	protected void doPost(HttpServletRequest request,
 			HttpServletResponse response) throws ServletException, IOException {
 
-		System.out.println(">> Do Post");
+		System.out.println(">> Do Post v 0.3");
 		
 		System.out.println(">> requestURL: " +request.getRequestURL());
 
@@ -90,7 +90,7 @@ public class UploadServlet extends HttpServlet {
 		byte[] bytes = new byte[1024 * 100];
 		
 		RequestDispatcher rd = request.getRequestDispatcher("objectStorage");
-		request.setAttribute("container", "FlowjsJava");
+		request.setAttribute("container", "FlowJsJava");
 		request.setAttribute("file", info.flowIdentifier+"_#_"+flowChunkNumber+".temp");
 		
 		System.out.println(">>> chiamata servlet object storage");

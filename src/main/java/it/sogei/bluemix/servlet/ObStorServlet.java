@@ -67,7 +67,7 @@ public class ObStorServlet extends HttpServlet {
 				.authenticate();
 
 		System.out.println("Authenticated successfully!");
-
+		System.out.println(os.objectStorage().containers().list());
 		ObjectStorageService objectStorage = os.objectStorage();
 
 		return objectStorage;
