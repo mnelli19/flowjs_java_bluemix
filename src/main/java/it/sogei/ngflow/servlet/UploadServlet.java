@@ -165,13 +165,11 @@ public class UploadServlet extends HttpServlet {
 				+ " - uploadedchunks " + info.uploadedChunks);
 		
 		if (info.uploadedChunks.contains(fcn)) {
-			System.out.println("SONO QUI 1");
 			System.out.println("Do Get arriba");
 			response.getWriter().print("Uploaded."); // This Chunk has been
 														// Uploaded.
 		} else {
-			System.out.println("SONO QUI 2");
-			System.out.println("chunk Not uploaded");
+			System.out.println("Chunk Not uploaded");
 			response.setStatus(HttpServletResponse.SC_NOT_FOUND);
 		}
 

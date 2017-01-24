@@ -18,7 +18,6 @@ public class FlowInfo {
     public static class flowChunkNumber {
         public flowChunkNumber(int number) {
             this.number = number;
-            System.out.println("SONO QUI 4");
             System.out.println("NUMBER - "+number);
         }
 
@@ -26,7 +25,6 @@ public class FlowInfo {
 
         @Override
         public boolean equals(Object obj) {
-        	System.out.println("SONO QUI 7");
             return obj instanceof flowChunkNumber
                     ? ((flowChunkNumber)obj).number == this.number : false;
         }
