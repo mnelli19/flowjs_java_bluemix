@@ -86,7 +86,7 @@ public class UploadServlet extends HttpServlet {
 		
 		RequestDispatcher rd = request.getRequestDispatcher("objectStorage");
 		request.setAttribute("container", "FlowjsJava");
-		request.setAttribute("file", info.flowIdentifier+"_#_"+flowChunkNumber);
+		request.setAttribute("file", info.flowIdentifier+"_#_"+flowChunkNumber+".temp");
 		
 		System.out.println(">>> chiamata servlet object storage");
 		rd.forward(request,response);

@@ -23,7 +23,7 @@
 					progressCallbacksInterval : 1,
 					withCredentials : true,
 					//testChunks : false,
-					method : "multipart"
+					method : "octet"
 				};
 				flowFactoryProvider.on('catchAll', function(event) {
 					console.log('catchAll', arguments);

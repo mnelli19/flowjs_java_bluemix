@@ -48,10 +48,10 @@ public class ObStorServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
 	//Get these credentials from Bluemix by going to your Object Storage service, and clicking on Service Credentials:
-	private static final String USERNAME = "admin_571955f6e1073832afd12fbec76d7cc8adacd396";
-	private static final String PASSWORD = "yMy/&3U}FST2jq2c";
+	private static final String USERNAME = "admin_9757dce54df22d39aebe60045e8949690d5ad7fe";
+	private static final String PASSWORD = "p?v.}M2N*1nQ6YQ(";
 	private static final String DOMAIN_ID = "1191759";
-	private static final String PROJECT_ID = "61a43cb5796c43e9b02f70d0f8649ef7";
+	private static final String PROJECT_ID = "80e33159813f48739f09570464e566c4";
 
 	private ObjectStorageService authenticateAndGetObjectStorageService() {
 		String OBJECT_STORAGE_AUTH_URL = "https://identity.open.softlayer.com/v3";
